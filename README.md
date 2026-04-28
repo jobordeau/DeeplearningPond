@@ -16,7 +16,6 @@ Projet réalisé dans le cadre du Mastère **Big Data & Intelligence Artificiell
 - [Installation](#installation)
 - [Utilisation](#utilisation)
 - [Détails techniques](#détails-techniques)
-- [Pistes d'amélioration](#pistes-damélioration)
 
 ---
 
@@ -300,21 +299,6 @@ La récompense intermédiaire `+0.1` sur scoring permet de débloquer l'apprenti
 - **`target_update_freq` = 100 épisodes** : valeur recommandée par Mnih et al. pour des problèmes de cette échelle
 - **`buffer_capacity` = 10 000** : couvre ~500 épisodes — suffisant pour décorréler sans noyer les transitions récentes
 - **PER `alpha` = 0.6, `beta_start` = 0.4** : valeurs canoniques de Schaul et al. (2016)
-
----
-
-## Pistes d'amélioration
-
-Le sujet ESGI proposait également d'autres familles d'algorithmes que je n'ai pas encore intégrées :
-
-- [ ] **REINFORCE** (Monte-Carlo policy gradient) avec et sans baseline
-- [ ] **PPO A2C-style** (acteur-critique avec clipping)
-- [ ] **MCTS / UCT** (planning par arbre de Monte-Carlo)
-- [ ] **AlphaZero** / **MuZero** (model-based + MCTS)
-- [ ] **Self-play** : entraîner deux agents l'un contre l'autre plutôt que contre un random
-- [ ] **Adversaire heuristique** plus fort que le random (ex : `RandomRollout`)
-- [ ] **Logging TensorBoard** pour suivre les métriques pendant l'entraînement
-- [ ] **Tests unitaires** sur les règles du jeu (calcul de scoring, fin de partie)
 
 ---
 
