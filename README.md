@@ -166,7 +166,7 @@ DeeplearningPond/
 ### Étapes
 
 ```bash
-git clone https://github.com/<votre-utilisateur>/DeeplearningPond.git
+git clone https://github.com/jobordeau/DeeplearningPond.git
 cd DeeplearningPond
 
 python -m venv .venv
